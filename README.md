@@ -4,4 +4,3 @@ Yash Nishikant
 
 </header>
 
-**My Personal Website**
