@@ -1,6 +1,6 @@
 <header>
 
-Yash Nishikant
+Personal Website of Yash Nishikant
 
 </header>
 
