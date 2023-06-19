@@ -13,3 +13,6 @@ minima:
     - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
 
 show_excerpts: true
+
+header_pages:
+   - projects.md
