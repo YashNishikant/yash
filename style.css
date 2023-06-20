@@ -8,10 +8,6 @@ table {
     border-collapse: collapse;
 }
 
-.right-margin {
-    margin-right: 20px;
-}
-
 .navigation-link {
     color: black;
     text-decoration: none;
@@ -20,6 +16,10 @@ table {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.font-xx-large {
+    font-size: xx-large;
 }
 
 .center {
