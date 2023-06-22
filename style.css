@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  img {
+    width: 150%;
+  }
+}
+
 body {
     margin-left: 10%;
     margin-right: 10%;
