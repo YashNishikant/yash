@@ -110,24 +110,29 @@ img {
 .heading1
 {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 10px;
 }
 
 .heading2
 {
     font-weight: bolder;
-    font-size: x-large;
+    font-size: large;
     margin-top: 10px;
 }
 
 .heading1top
 {
     font-weight: bolder;
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 40px;
 }
 
+.large-font
+{
+    font-size: large;
+    margin-top: 10px;
+}
 .navbar 
 {
     font-size: x-large;
@@ -137,4 +142,15 @@ img {
 .table-cell-center
 {
     display: table-cell; vertical-align: middle;
+}
+
+ul.dashed {
+    list-style-type: none;
+}
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
 }
