@@ -119,6 +119,8 @@ img {
     font-weight: bolder;
     font-size: larger;
     margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
 }
 
 .heading1top
@@ -157,4 +159,42 @@ ul.dashed > li {
 ul.dashed > li:before {
     content: "-";
     text-indent: -5px;
+}
+.separated{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.centerMarginBottom{
+    margin-bottom: 100px;
+}
+section {
+    max-width: 800px;
+    margin: 20px 0; /* Add spacing at the top and bottom of the section */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.body_sections {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100vh;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(127, 0, 205);
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
 }
