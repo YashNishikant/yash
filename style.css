@@ -135,8 +135,14 @@ ul.dashed > li:before {
   content: "-";
   text-indent: -5px;
 }
-.centerMarginBottom {
-  margin-bottom: 100px;
+.separated{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+.centerMarginBottom{
+    margin-bottom: 100px;
 }
 section {
   max-width: 800px;
