@@ -15,13 +15,13 @@
                 <th width="40%">
                     <div class="left navbar">
                         <a target="_blank" rel="noopener noreferrer" class="navigation-link"
-                            href="https://docs.google.com/document/d/1rFJb_Gul3ECdG-2JrqE6uW58ZCr2OxaepU2bQ4Qj5lU/edit?tab=t.0">
+                            href="https://docs.google.com/document/d/1DPIdoNO2UhZKOAxddNH3-rREWwvQlqRBHAzCJYfmj68/edit?tab=t.0">
                             Resume
                         </a>
                     </div>
                 </th>
                 <th width="10%">
-                    <div style=" justify-content: center; align-items: center; margin: auto;">
+                    <div style="justify-content: center; align-items: center; margin: auto;">
                         <a href="/">
                             <img src="./assets/icons8-home.svg" alt="Home" />
                         </a>
@@ -45,9 +45,8 @@
             </div>
             <div>
                 <p class="heading1 center">Yash Nishikant</p>
-            </div></br>
+            </div>
             <p class="heading2 center">Software Engineer</p>
-        </div>
         </div>
         <div class="social">
             <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
@@ -80,34 +79,51 @@
             <p style="font-size: larger;">
                 I am a Computer Science student at Rutgers University's SAS Honors Program with a strong passion for
                 technology and problem-solving. I am also a developer for Rutgers OIT, using React JS and Redux to
-                maintain and develop new features for the myRutgers web application. Excited to make many more
-                contributions!
+                develop new features for the myRutgers web application.
             </p>
 
             <p class="heading2 left">Skills</p>
             <p style="font-size: larger;">
-                Java, Python, C#, HTML, Javascript, React, OpenCV, Matplotlib, Firebase, Unity Game Engine
+                Java, Python, C#, C, Javascript, Typescript, Node.JS, SQL
+            </p>
+            <p style="font-size: larger;">
+
+                React, OpenCV, Git, Docker, REST APIs, Firebase, Databases
             </p>
             <p class="heading2 left">Work Experience</p>
             <p style="font-size: larger;">
-                <b>Bloomberg Software Engineering Intern, June 2024 - Present, New York</b>
+                <b>Bloomberg Software Engineering Intern, June 2025 - August 2025, New York</b>
             </p>
             <p style="font-size: larger;">
-                Building a portfolio dashboard with React JS and Express
+                Developing enterprise solutions for financial data analysis and visualization
+            </p>
+            <p style="font-size: larger;">
+                <b>Bloomberg Software Engineering Intern, June 2024 - August 2024, New York</b>
+            </p>
+            <p style="font-size: larger;">
+                Built a portfolio dashboard with React JS and Express for financial data management
             </p>
             <p style="font-size: larger;">
                 <b>Rutgers Office of Information Technology, Software Engineer, January 2024 - Present, New Jersey</b>
             </p>
             <p style="font-size: larger;">
-                Actively involved in the development and maintenance of the myRutgers NextGen Portal, a comprehensive
-                online service platform for Rutgers University. Proficient in using React.js and Redux for creating
-                interactive UI components.
+                Developing and maintaining the myRutgers NextGen Portal using React.js and Redux
+                for creating interactive UI components. Collaborating with cross-functional teams to
+                implement new features and resolve user-reported issues.
             </p>
         </div>
-
-
     </main>
+
     <div id="footer"></div>
+
+    <script>
+        // Load the footer content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>

@@ -1,85 +1,89 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-.avatar {
-    margin: auto;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: right;
-    border-radius: 50%;
-    object-fit: cover;
-}
-}
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
-.avatar {
-    margin: auto;
-    width: 25%;
-    display: flex; 
-    justify-content: center;
-    align-items: right;
-    border-radius: 50%;
-    object-fit: cover;
-}
-}
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
-.avatar {
-    margin: auto;
-    width: 100%;
-    display: flex; 
-    justify-content: center;
-    align-items: right;
-    border-radius: 50%;
-    object-fit: cover;
-}
-}
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-.avatar {
-    margin: auto;
-    width: 25%;
-    display: flex; 
-    justify-content: center;
-    align-items: right;
-    border-radius: 50%;
-    object-fit: cover;
-}
+/* Base styles with minimalist approach */
+
+
+
+:root {
+  --main-bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #555555;
+  --link-color: #0066cc;
+  --border-color: #eeeeee;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 body {
   margin-left: 10%;
   margin-right: 10%;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+}
+
+/* Responsive avatar styles */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .avatar {
+    margin: auto;
+    width: 80%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+/* iPads and larger phones */
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 1024px) {
+  .avatar {
+    margin: auto;
+    width: 40%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+/* Desktops and laptops */
+@media only screen 
+and (min-width : 1025px) {
+  .avatar {
+    margin: auto;
+    width: 20%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 2rem;
 }
 
 .navigation-link {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navigation-link:hover {
+  color: var(--link-color);
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.font-xx-large {
-  font-size: xx-large;
+  border-radius: 4px;
 }
 
 .center {
@@ -87,109 +91,164 @@ img {
   justify-content: center;
 }
 
-.pad-right {
-  padding-right: 20px;
-}
-
-.pad-left {
-  padding-left: 20px;
-}
-
 .left {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 .right {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-}
-
-.large-font {
-  font-size: large;
-  margin-top: 10px;
+  justify-content: flex-end;
 }
 
 .navbar {
-  font-size: x-large;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 0px;
-  margin-right: 0px;
+  font-size: 1.2rem;
+  margin: 1.25rem 0;
 }
 
-.table-cell-center {
-  display: table-cell;
-  vertical-align: middle;
+/* Typography */
+.heading1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-ul.dashed {
-  list-style-type: none;
+.heading2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-ul.dashed > li {
-  text-indent: -5px;
-}
-ul.dashed > li:before {
-  content: "-";
-  text-indent: -5px;
-}
-.separated{
-    display: flex; 
-    justify-content: center;
-    margin-bottom: 100px;
-    text-align: justify;
-}
-.centerMarginBottom{
-    margin-bottom: 100px;
-}
+
+/* Projects */
 section {
   max-width: 800px;
-  margin: 20px 0; /* Add spacing at the top and bottom of the section */
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  margin: 2rem 0;
+  background-color: var(--main-bg-color);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: var(--shadow);
 }
 .body_sections {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
-.starter{
-    display: flex;
-    flex-direction: row;
-    height: 50vh;
-    margin-top: 100px;
-}
+
+/* Links */
 a {
   text-decoration: none;
-  color: rgb(127, 0, 205);
-  font-style: bold;
-  font-family: "Courier New", Courier, monospace;
+  color: var(--link-color);
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Typography */
 p {
-  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 1rem;
 }
+
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
 hr {
-  border: 1px solid rgb(0, 0, 0);
+  border: none;
+  border-top: 1px solid var(--border-color);
   width: 100%;
+  margin: 2rem 0;
 }
-.heading1 {
-  font-weight: bolder;
-  font-size: x-large;
-  margin-top: 10px;
+
+/* Social icons */
+.social {
+  margin: 2rem 0;
 }
-.heading2 {
-  font-weight: bolder;
-  font-size: larger;
-  margin-top: 10px;
-  font-size: 40px;
-  text-align: center;
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.social a:hover {
+  transform: translateY(-2px);
+}
+
+/* Project styling */
+.project {
+  padding: 0.5rem;
+}
+
+.project h2 {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Project images styling for larger display */
+.project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-images img {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* For larger screens, we can show images in a 2x2 grid */
+@media (min-width: 768px) {
+  .project-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Additional utility classes */
+.pad-right {
+  padding-right: 1.25rem;
+}
+
+.pad-left {
+  padding-left: 1.25rem;
+}
+
+.font-xx-large {
+  font-size: 2rem;
+}
+
+.large-font {
+  font-size: 1.125rem;
+  margin-top: 0.625rem;
+}
+
+/* Helpers */
+ul.dashed {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+ul.dashed > li {
+  text-indent: -0.3125rem;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  margin-right: 0.3125rem;
 }

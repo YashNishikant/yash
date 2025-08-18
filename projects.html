@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Projects</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/x-icon" href="./assets/y.png">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <th width="40%">
                     <div class="left navbar">
                         <a target="_blank" rel="noopener noreferrer" class="navigation-link"
-                            href="https://docs.google.com/document/d/1rFJb_Gul3ECdG-2JrqE6uW58ZCr2OxaepU2bQ4Qj5lU/edit?tab=t.0">
+                            href="https://docs.google.com/document/d/1DPIdoNO2UhZKOAxddNH3-rREWwvQlqRBHAzCJYfmj68/edit?tab=t.0">
                             Resume
                         </a>
                     </div>
@@ -41,6 +41,22 @@
     </header>
 
     <div class="body_sections">
+        <section>
+            <div class="project">
+                <h2>RU Degree Tracker</h2>
+                <p>Web application designed to help Rutgers students plan and track their academic progress.</p>
+                <p>Built with modern web technologies to provide a seamless user experience.</p>
+                <p><a href="https://rudegrees.com/" target="_blank">Live Demo</a> | <a
+                        href="https://github.com/DylanPina/RUCS-Hub" target="_blank">GitHub Repo</a></p>
+                <div class="project-images">
+                    <img src="./assets/wb_dnbb1.png" alt="RU Degree Tracker" />
+                    <img src="./assets/wb_dnbb2.png" alt="RU Degree Tracker" />
+                    <img src="./assets/wb_dnbb3.png" alt="RU Degree Tracker" />
+                    <img src="./assets/wb_dnbb4.png" alt="RU Degree Tracker" />
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="project">
                 <h2>Photoshare</h2>
@@ -68,11 +84,15 @@
 
         <section>
             <div class="project">
-                <h2>Linear Regression Model</h2>
-                <p>Optimizing slope and y-intercept of a linear function to fit a dataset with a linear correlation</p>
-                <p><a href="https://github.com/YashNishikant/AIprojects/tree/main/linearRegression"
-                        target="_blank">GitHub Repo</a></p>
-                <center><img src="./assets/linear.jpg" alt="github" /></center>
+                <h2>Alphabet Parser</h2>
+                <p>Developed a tool that parses and processes alphabetic characters using custom algorithms.</p>
+                <p>Implemented efficient data structures for character recognition and transformation.</p>
+                <p><a href="https://github.com/YashNishikant/AlphabetParser" target="_blank">GitHub Repo</a></p>
+                <center>
+
+                    <img src="./assets/parser.png" alt="RU Degree Tracker" />
+
+                </center>
             </div>
         </section>
 
@@ -121,6 +141,17 @@
         <hr>
 
     </div>
+
+    <div id="footer"></div>
+
+    <script>
+        // Load the footer content
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
